@@ -10,11 +10,11 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var todos = require('./routes/todos');
 
-import configModule from './config/index.js';
+const configModule = require('./config/index.js');
 const config = configModule();
 
 // Load mongoose package
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 // Use native Node promises
 mongoose.Promise = global.Promise;

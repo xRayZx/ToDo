@@ -1,6 +1,6 @@
 "use strict";
 
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const TodoSchema = new mongoose.Schema({
 	name: String,

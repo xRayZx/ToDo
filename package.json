@@ -2,9 +2,11 @@
   "name": "NodeToDo",
   "version": "1.0.0",
   "private": true,
-	"main": "index.js",
+	"main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+		"start": "nodemon app.js --exec babel-node",
+		"build": "babel lib -d dist",
+		"serve": "node dist/app.js"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
