@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import configureStore from './store/store.js';
+
+window.store = configureStore();
+
 const App = React.createClass({
 	render () {
 		return (
